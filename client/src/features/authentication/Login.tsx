@@ -8,7 +8,7 @@ const Signup = () => {
 
       <HeaderGuestLayout />
 
-      <form className="flex flex-col bg-white gap-400 rounded-[12px] w-[343px] m-auto px-250 py-300">
+      <form className="flex flex-col bg-white gap-400 rounded-[12px] w-[343px] sm:w-[560px] m-auto px-250 py-300">
         <h2 className="text-preset-1 text-primary-grey-900 font-bold">Login</h2>
 
         <div className="flex flex-col gap-200">
