@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { DefaultLayout, GuestLayout, Login, PageNotFound, Signup } from '../constants';
 
-const Router = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: '/auth',
     element: <GuestLayout />,
@@ -27,4 +27,4 @@ const Router = createBrowserRouter([
   },
 ]);
 
-export default Router;
+export default router;
