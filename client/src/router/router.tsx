@@ -3,7 +3,7 @@ import { DefaultLayout, GuestLayout, Login, PageNotFound, Signup } from '../cons
 
 const router = createBrowserRouter([
   {
-    path: '/auth',
+    path: '/',
     element: <GuestLayout />,
     children: [
       {
