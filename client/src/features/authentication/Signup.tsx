@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
-import { authIllustration, Button, HeaderGuestLayout, InputField, Label } from '../../constants';
+import { Button, GuestImage, HeaderGuestLayout, InputField, Label } from '../../constants';
 
 const Signup = () => {
   return (
-    <div className="flex flex-col h-screen">
-      <img src={authIllustration} className="hidden" alt="illustration" />
-
+    <div className="flex flex-col h-screen lg:h-full-screen lg:grid lg:grid-cols-3">
       <HeaderGuestLayout />
 
-      <form className="flex flex-col bg-white gap-400 rounded-[12px] m-auto w-[343px] sm:w-[560px] px-250 py-300">
+      <GuestImage />
+
+      <form className="flex flex-col bg-white gap-400 rounded-[12px] w-[343px] sm:w-[560px] m-auto px-250 py-300 lg:col-span-2">
         <h2 className="text-preset-1 text-primary-grey-900 font-bold">Signup</h2>
 
         <div className="flex flex-col gap-200">
