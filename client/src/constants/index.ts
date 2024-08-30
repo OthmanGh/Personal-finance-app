@@ -15,7 +15,7 @@ import Input from '../ui/Input';
 import Label from '../ui/Label';
 import Button from '../ui/Button';
 import InputField from '../ui/InputField';
-
+import GuestImage from '../ui/GuestImage';
 export {
   router,
   authSlice,
@@ -34,4 +34,5 @@ export {
   Input,
   Label,
   InputField,
+  GuestImage,
 };
