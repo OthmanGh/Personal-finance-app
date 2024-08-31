@@ -16,6 +16,9 @@ import Label from '../ui/Label';
 import Button from '../ui/Button';
 import InputField from '../ui/InputField';
 import GuestImage from '../ui/GuestImage';
+import { signupSchema, loginSchema } from '../utils/types';
+import api from '../services/api';
+
 export {
   router,
   authSlice,
@@ -35,4 +38,7 @@ export {
   Label,
   InputField,
   GuestImage,
+  signupSchema,
+  loginSchema,
+  api,
 };
