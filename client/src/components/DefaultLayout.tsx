@@ -1,4 +1,5 @@
 import { Outlet, Navigate } from 'react-router-dom';
+import { Sidebar } from '../constants';
 
 const DefaultLayout = () => {
   const token = localStorage.getItem('ACCESS_TOKEN');
@@ -6,7 +7,8 @@ const DefaultLayout = () => {
   if (!token) return <Navigate to="/login" />;
 
   return (
-    <div>
+    <div className="flex flex-col-reverse lg:flex-row min-h-screen bg-primary-beige-light">
+      <Sidebar />
       <Outlet />
     </div>
   );
