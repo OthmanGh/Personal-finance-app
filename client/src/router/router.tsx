@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { DefaultLayout, GuestLayout, Login, PageNotFound, Signup } from '../constants';
+import { Budgets, DefaultLayout, GuestLayout, Login, Overview, PageNotFound, Pots, RecurringBills, Signup, Transactions } from '../constants';
 
 const router = createBrowserRouter([
   {
@@ -19,8 +19,34 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <DefaultLayout />,
-    children: [],
+    children: [
+      {
+        path: 'overview',
+        element: <Overview />,
+      },
+
+      {
+        path: 'transactions',
+        element: <Transactions />,
+      },
+
+      {
+        path: 'budgets',
+        element: <Budgets />,
+      },
+
+      {
+        path: 'pots',
+        element: <Pots />,
+      },
+
+      {
+        path: 'recurring-bills',
+        element: <RecurringBills />,
+      },
+    ],
   },
+
   {
     path: '*',
     element: <PageNotFound />,
