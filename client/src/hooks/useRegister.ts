@@ -10,6 +10,7 @@ const useRegister = (isSignup: boolean) => {
     register,
     handleSubmit,
     setError,
+    reset,
     formState: { errors, isSubmitting },
   } = useForm({
     resolver: zodResolver(isSignup ? signupSchema : loginSchema),
@@ -27,6 +28,7 @@ const useRegister = (isSignup: boolean) => {
       if (res.data.status === 'success') {
         dispatch(setToken(res.data.token));
         navigate('/overview');
+        reset();
       }
     } catch (error: any) {
       const backendResponse = error.response?.data?.message || 'Something went wrogn';
