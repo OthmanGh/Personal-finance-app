@@ -2,9 +2,9 @@ import { z } from 'zod';
 
 export const signupSchema = z
   .object({
-    name: z.string().min(3),
+    name: z.string().min(3, 'Name must contain at least 3 character(s)'),
     email: z.string().email(),
-    password: z.string().min(8),
+    password: z.string().min(8, 'Password must contain at least 8 character(s)'),
     confirmPassword: z.string(),
   })
   .refine((data) => data.password === data.confirmPassword, {
@@ -14,5 +14,5 @@ export const signupSchema = z
 
 export const loginSchema = z.object({
   email: z.string().email(),
-  password: z.string().min(8, 'Password must be at least 10 characters'),
+  password: z.string().min(8, 'Password must contain at least 8 character(s)'),
 });
