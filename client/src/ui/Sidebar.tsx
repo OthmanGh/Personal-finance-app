@@ -1,15 +1,20 @@
 import NavSidebar from './NavSidebar';
 import { logo } from '../constants';
 import MinimizeMenu from './MinimizeMenu';
-const Sidebar = () => {
+
+type SidebarProps = {
+  onToggle: () => void;
+};
+
+const Sidebar = ({ onToggle }: SidebarProps) => {
   return (
-    <aside className="bg-primary-grey-900 text-white lg:h-[100vh] lg:w-[300px] overflow-hidden lg:rounded-r-xl lg:flex lg:flex-col lg:justify-between">
+    <aside className="w-full  sticky bottom-0 rounded-t-xl bg-primary-grey-900 text-white lg:min-h-screen overflow-hidden lg:flex lg:flex-col lg:w-[300px] lg:justify-between lg:rounded-t-none lg:rounded-e-xl transition-all duration-400">
       <div>
         <img src={logo} alt="finance logo" className="hidden lg:block px-400 py-500" />
         <NavSidebar />
       </div>
 
-      <MinimizeMenu />
+      <MinimizeMenu onToggle={onToggle} />
     </aside>
   );
 };
