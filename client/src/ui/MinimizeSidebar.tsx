@@ -7,7 +7,7 @@ type MinimizeSidebarProps = {
 
 const MinimizeSidebar = ({ onToggle }: MinimizeSidebarProps) => {
   return (
-    <aside className="h-screen bg-primary-grey-900 w-[88px] rounded-r-[16px] flex flex-col items-center justify-between pb-400">
+    <aside className="min-h-screen bg-primary-grey-900 w-[88px] rounded-r-[16px] flex flex-col items-center justify-between pb-400">
       <div className="flex flex-col py-500 px-300 gap-300">
         <div className="flex items-center justify-center h-[101.44px]">
           <img src={smallLogo} alt="f logo" className="" />
