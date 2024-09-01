@@ -5,7 +5,7 @@ type HeaderDefaultLayoutProps = {
 };
 
 const HeaderDefaultLayout = ({ children }: HeaderDefaultLayoutProps) => {
-  return <h2>{children}</h2>;
+  return <h2 className="w-full">{children}</h2>;
 };
 
 export default HeaderDefaultLayout;
