@@ -1,10 +1,11 @@
-import { TransactionsOverview, PotsOverview } from '../constants';
+import { TransactionsOverview, PotsOverview, RecurringBillsOverview } from '../constants';
 
 const OverviewContentLayout = () => {
   return (
     <div className="flex flex-col gap-200">
       <PotsOverview />
       <TransactionsOverview />
+      <RecurringBillsOverview />
     </div>
   );
 };
