@@ -5,6 +5,7 @@ import Budgets from '../pages/Budgets';
 import Transactions from '../pages/Transactions';
 import Pots from '../pages/Pots';
 import RecurringBills from '../pages/RecurringBills';
+import RecurringBillsOverview from '../features/overview/RecurringBillsOverview';
 import MinimizeMenu from '../ui/MinimizeMenu';
 import MinimizeSidebar from '../ui/MinimizeSidebar';
 import authSlice from '../features/authentication/authSlice';
@@ -144,4 +145,5 @@ export {
   TransactionsOverview,
   UsersTransactionsContainer,
   formatDate,
+  RecurringBillsOverview,
 };
