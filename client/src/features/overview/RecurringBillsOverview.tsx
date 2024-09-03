@@ -3,7 +3,7 @@ import RecurringBill from './RecurringBill';
 
 const RecurringBillsOverview = () => {
   return (
-    <div className="flex flex-col gap-400 rounded-[12px] px-250 py-300 sm:p-400 bg-white">
+    <div className="flex flex-col gap-400 rounded-[12px] px-250 py-300 sm:p-400 bg-white h-[327px]">
       <HeaderOverviewComp title="Recurring Bills" to="recurring-bills" />
 
       <div className="flex flex-col gap-150">
