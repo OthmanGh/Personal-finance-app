@@ -4,15 +4,19 @@ import Overview from '../pages/Overview';
 import Budgets from '../pages/Budgets';
 import Transactions from '../pages/Transactions';
 import Pots from '../pages/Pots';
+import BudgetsOverview from '../features/overview/BudgetsOverview';
 import RecurringBills from '../pages/RecurringBills';
 import RecurringBillsOverview from '../features/overview/RecurringBillsOverview';
 import MinimizeMenu from '../ui/MinimizeMenu';
 import MinimizeSidebar from '../ui/MinimizeSidebar';
+import TransactionsHeader from '../ui/TransactionsHeader';
 import authSlice from '../features/authentication/authSlice';
 import Login from '../features/authentication/Login';
 import Signup from '../features/authentication/Signup';
 import PageNotFound from '../pages/PageNotFound';
 import router from '../router/router';
+import SearchTransaction from '../features/transactions/SearchTransaction';
+import MobileFilterSortComp from '../features/transactions/MobileFilterSortComp';
 import store from '../redux/store';
 import authIllustration from '../assets/images/illustration-authentication.svg';
 import logo from '../assets/images/logo-large.svg';
@@ -44,7 +48,19 @@ import iconCaretRight from '../assets/images/icon-caret-right.svg';
 import iconPot from '../assets/images/icon-pot.svg';
 import TransactionsOverview from '../features/overview/TransactionsOverview';
 import UsersTransactionsContainer from '../features/overview/UsersTransactionsContainer';
+import TransactionsTable from '../features/transactions/TransactionsTable';
+import iconFilter from '../assets/images/icon-filter-mobile.svg';
+import iconSort from '../assets/images/icon-sort-mobile.svg';
+import iconSearch from '../assets/images/icon-search.svg';
+import iconCaretDown from '../assets/images/icon-caret-down.svg';
+import FilterDropdownComp from '../components/FilterDropdownComp';
+import TransactionsBody from '../features/transactions/TransactionsBody';
+import TransactionItem from '../ui/TransactionItem';
+import iconCaretLeft from '../assets/images/icon-caret-left.svg';
+import PaginationButton from '../features/transactions/PaginationButton';
+import PaginationList from '../features/transactions/PaginationList';
 import { formatDate } from '../utils/helper';
+
 const sidebarContent = [
   {
     id: 1,
@@ -146,4 +162,19 @@ export {
   UsersTransactionsContainer,
   formatDate,
   RecurringBillsOverview,
+  BudgetsOverview,
+  TransactionsTable,
+  iconFilter,
+  iconSort,
+  iconSearch,
+  TransactionsHeader,
+  SearchTransaction,
+  MobileFilterSortComp,
+  iconCaretDown,
+  FilterDropdownComp,
+  TransactionsBody,
+  TransactionItem,
+  iconCaretLeft,
+  PaginationButton,
+  PaginationList,
 };
