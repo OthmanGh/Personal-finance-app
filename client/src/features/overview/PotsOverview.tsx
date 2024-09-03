@@ -5,7 +5,7 @@ import HeaderOverviewComp from './HeaderOverviewComp';
 
 const PotsOverview = () => {
   return (
-    <div className={padding}>
+    <div className={`${padding} lg:h-[218px]`}>
       <HeaderOverviewComp title="Pots" to="pots" />
 
       <div className="grid grid-cols-1 gap-250 sm:grid-cols-2">
@@ -22,7 +22,6 @@ const PotsOverview = () => {
           <PotsBox color="cyan" value="40" category="Gift" />
           <PotsBox color="navy" value="110" category="Concert Ticket" />
           <PotsBox color="yellow" value="19" category="New Laptop" />
-          <div></div>
         </div>
       </div>
     </div>
