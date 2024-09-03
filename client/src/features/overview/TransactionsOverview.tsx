@@ -4,7 +4,7 @@ import { padding } from './styleVars';
 
 const TransactionsOverview = () => {
   return (
-    <div className={`${padding}`}>
+    <div className={`${padding} lg:h-[519px]`}>
       <HeaderOverviewComp title="Transactions" to="transactions" />
       <UsersTransactionsContainer />
     </div>
