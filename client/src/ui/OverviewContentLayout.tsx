@@ -1,11 +1,17 @@
-import { TransactionsOverview, PotsOverview, RecurringBillsOverview } from '../constants';
+import { TransactionsOverview, PotsOverview, RecurringBillsOverview, BudgetsOverview } from '../constants';
 
 const OverviewContentLayout = () => {
   return (
-    <div className="flex flex-col gap-200">
-      <PotsOverview />
-      <TransactionsOverview />
-      <RecurringBillsOverview />
+    <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
+      <div className="flex flex-col gap-6 sm:gap-8">
+        <PotsOverview />
+        <TransactionsOverview />
+      </div>
+
+      <div className="flex flex-col gap-6 sm:gap-8">
+        <BudgetsOverview />
+        <RecurringBillsOverview />
+      </div>
     </div>
   );
 };
