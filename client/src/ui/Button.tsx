@@ -13,7 +13,7 @@ const Button = ({ children, type = 'button', isSubmitting, onClick }: ButtonProp
       onClick={onClick}
       type={type}
       disabled={isSubmitting}
-      className="bg-primary-grey-900 transition-all duration-300 text-white border-2 border-primary-grey-900 rounded-[8px] h-[53px] hover:bg-primary-grey-500 hover:border-primary-grey-500 disabled:bg-primary-beige disabled:border-primary-beige"
+      className="bg-primary-grey-900 p-200 font-bold transition-all duration-300 text-preset-4 text-white border-2 border-primary-grey-900 rounded-[8px] hover:bg-primary-grey-500 hover:border-primary-grey-500 disabled:bg-primary-beige disabled:border-primary-beige min-w-fit"
     >
       {isSubmitting ? 'Loading...' : children}
     </button>
