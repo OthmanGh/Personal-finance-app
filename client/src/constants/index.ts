@@ -59,6 +59,16 @@ import TransactionItem from '../ui/TransactionItem';
 import iconCaretLeft from '../assets/images/icon-caret-left.svg';
 import PaginationButton from '../features/transactions/PaginationButton';
 import PaginationList from '../features/transactions/PaginationList';
+import BillsStats from '../features/RecurringBills/BillsStats';
+import BillsSummary from '../ui/BillsSummary';
+import iconBills from '../assets/images/icon-recurring-bills.svg';
+import TotalBillsCard from '../ui/TotalBillsCard';
+import BillItem from '../ui/BillItem';
+import SearchBill from '../features/RecurringBills/SearchBill';
+import BillsTable from '../features/RecurringBills/BillsTable';
+import Pot from '../features/Pots/Pot';
+import PotsContainer from '../features/Pots/PotsContainer';
+import iconEllipsis from '../assets/images/icon-ellipsis.svg';
 import { formatDate } from '../utils/helper';
 
 const sidebarContent = [
@@ -137,6 +147,8 @@ export {
   GuestImage,
   signupSchema,
   loginSchema,
+  BillsSummary,
+  TotalBillsCard,
   api,
   Overview,
   sidebarContent,
@@ -177,4 +189,12 @@ export {
   iconCaretLeft,
   PaginationButton,
   PaginationList,
+  BillsStats,
+  iconBills,
+  BillItem,
+  SearchBill,
+  BillsTable,
+  Pot,
+  PotsContainer,
+  iconEllipsis,
 };
